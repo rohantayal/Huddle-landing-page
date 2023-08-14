@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    padding-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 15%;
+}
+
+header img {
+    width: 40%;
+}
+
+main {
+    width: 80%;
+    display: grid;
+    grid-template: 3fr 2fr 1fr/100%;
+    margin: 10%;
+    text-align: center;
+}
+
+main #illustration-mockup {
+    max-width: 100%;
+}
+
+#text h1 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#text p {
+    font-family: "Open sans", Arial;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+main button {
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    color: hsl(300, 69%, 71%);
+    font-weight: 400;
+}
+
+footer {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%
+
+}
+
+footer a i {
+    border: solid 2px #FFFFFF;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+@media screen and (min-width: 800px){
+    body {
+        background: #674baf url(./images/bg-desktop.svg) no-repeat;
+        background-size: contain;
+        background-color: hsl(257, 40%, 49%);
+
+    }
+
+    header{
+        padding-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 7%; 
+    }
+
+    header img {
+        width: 15%;
+    }
+
+    main {
+        width: 95%;
+        grid-template: 5fr 3fr/1fr 1fr;
+        margin: 5% 0 0 5%;
+        text-align: left;
+        column-gap: 3%;
+    }
+
+    main #illustration-mockup {
+        grid-row: 1/ span2;
+    }
+
+    main button{
+        align-self: flex-start;
+        justify-self: flex-start;
+        font-size: 20px;
+    }
+
+    main #text{
+        margin: 0;
+        width: 80%;
+    }
+
+
+    main #text h1{
+        font-size: 48px;
+        margin-top: 5%;
+        margin-bottom: 3%;;
+    }
+
+    main #text p{
+        font-size: 20px;
+        margin-bottom: 5%
+    }
+
+    footer{
+        margin: 0 5% 0 0;
+        justify-content: flex-end;
+    }
+    
+}
+
